@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo), // ✳️ ALTERE AQUI (cor/tema)
       theme: ThemeData(primarySwatch: Colors.blue), // ✳️ ALTERE AQUI: cor do tema (se preferir manter Material 2)
 
-      initialRoute: Routes.splash, // ✳️ ALTERE AQUI caso sua rota inicial não seja '/', ex.: Routes.home == '/home'
+      initialRoute: Routes.home, // ✳️ ALTERE AQUI caso sua rota inicial não seja '/', ex.: Routes.home == '/home'
       onGenerateRoute: Routes.generateRoute, // (mantenha) usa o interpretador central de rotas
 
       debugShowCheckedModeBanner: false, // ✳️ ALTERE AQUI se o professor quiser o banner de debug visível (true)
