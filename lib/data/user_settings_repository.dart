@@ -30,4 +30,18 @@ class UserSettingsRepository {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_key); // apaga o favorito
   }
+
+  static const _keyShowIntro = 'show_intro';
+ Future<bool> getShowIntro() async {
+   final prefs = await 
+SharedPreferences.getInstance();
+   return prefs.getBool(_keyShowIntro) ?? true;
+ }
+ Future<void> setShowIntro(bool value) async {
+   final prefs = await 
+SharedPreferences.getInstance();
+   await prefs.setBool(_key, value);
+ 
+  }
+
 }
